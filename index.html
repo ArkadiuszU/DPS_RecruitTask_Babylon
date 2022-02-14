@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="main.css">
+        <title>Babylon Recruit Task</title>
+    </head>
+
+   <body>
+
+    <canvas id="renderCanvas" touch-action="none"></canvas> <!-- touch-action="none" for best results from PEP -->
+    <div id="menu-box" >
+        <div id="menu" >
+            <h2>MENU</h2>
+                <button id = "add" >Dodaj losowy obiekt</button>
+                <button id = "delete" disabled >Usuń ostatni obiekt</button>
+                <button id = "change_color" >Zmień kolor</button>
+                
+                <label for="rangeZ">Kamera oddal/przybliż</label>
+                <input id= "rangeZ" type="range" min="0" max="100" value="50">
+                <label for="rangeY">Kamera góra/dół</label>
+                <input id= "rangeY" type="range" min="0" max="100" value="50">
+                <label for="rangeX">Kamera prawo/lewo </label>
+                <input id= "rangeX" type="range" min="0" max="100" value="50">
+        </div>
+    </div> 
+
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <script src="app.js"></script>
+
+
+   </body>
+
+
+
+
+</html> 
